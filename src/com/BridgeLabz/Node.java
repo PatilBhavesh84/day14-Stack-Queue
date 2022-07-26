@@ -11,11 +11,16 @@ public  class Node {
 
 	public static void main(String[] args) {	        
 		System.out.println("New Queue ");
-		Enqueue queue = new Enqueue();
+		Dequeue queue = new Dequeue();
 		queue.enqueue(56);
 		queue.enqueue(30);
 		queue.enqueue(70);
 		queue.printQueue();
+		System.out.println();
+		 queue.dequeue();
+		 queue.dequeue();
+		 queue.dequeue();
+		 queue.printQueue();
 	}
 
 

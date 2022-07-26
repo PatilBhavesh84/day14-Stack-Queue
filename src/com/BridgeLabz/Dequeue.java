@@ -1,6 +1,6 @@
 package com.BridgeLabz;
 
-class Enqueue {
+class Dequeue {
 
 	static Node head;
 	public void enqueue(int data) {
@@ -16,6 +16,11 @@ class Enqueue {
 			}
 			pointer.next = newNode;
 		}
+	}
+	public void dequeue() {
+
+		System.out.println("Dequeued element is " + head.data);
+		head = head.next;
 	}
 	public void printQueue(){
 		if (head == null) {
