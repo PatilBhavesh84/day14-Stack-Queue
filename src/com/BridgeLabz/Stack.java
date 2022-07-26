@@ -1,10 +1,9 @@
 package com.BridgeLabz;
 import java.util.Scanner;
-public class Stack {
+class Stack {
 	int top;
 	int maxsize = 3;
 	int[] arr = new int[maxsize];
-
 
 	boolean isEmpty()
 	{
@@ -30,7 +29,20 @@ public class Stack {
 			return true;
 		}
 	}
-
+	boolean pop ()
+	{
+		if (top == -1)
+		{
+			System.out.println("Underflow !!");
+			return false;
+		}
+		else
+		{
+			top --;    
+			System.out.println("Item popped");
+			return true;
+		}
+	}
 	void display ()
 	{
 		System.out.println("Stack elements");
